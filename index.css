@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+}
+
+nav{
+  position: sticky;
+  padding: 8px 24px;
+  background-color: rgb(214,214,214);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cardSummary{
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background-color: white;
+  padding: 16px;
+  border: 1px solid rgb(81,81,81);
+
+  table{
+    th{
+      font-weight: 700;
+    }
+    th, td{
+      min-width: 100px;
+      text-align: center;
+    }
+  }
+}
+
+.productCard{
+  
+}
+
+.productThumbnail{
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.productBottomSheet{
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInfoContainer{
+
+}
+
+.productName{
+  display: block;
+  margin-top: 1em;
+}
+
+.productPrice{
+
+}
+
+.addToCard{
+
+}
+
+#productList{
+  display: grid;
+  max-width: 1240px;
+  gap: 2rem;
+  margin: 5em auto;
+  padding: 0 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+}
+
+button{
+  background-color: rgb(105, 182, 255);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+  font-size: 20px;
+}
