@@ -14,8 +14,8 @@
       <h1>Future Shop</h1>
     </div>
     <div>
-      <button id="viewCard">View Card</button>
-      <div id="cardSummary">
+      <button id="viewCart">View Card</button>
+      <div id="cartSummary" style="display: none;">
         <table>
           <thead>
             <tr>
@@ -24,16 +24,16 @@
               <th>Price</th>
             </tr>
           </thead>
-          <tbody id="cardSummary_items">
-            <tr>
+          <tbody id="cartSummary_items">
+            <!-- <tr>
               <td>iPhone 29</td>
               <td>1</td>
               <td>500.00</td>
-            </tr>
+            </tr> -->
           </tbody>
           <tfoot>
             <th colspan="2">Total</th>
-            <td id="cardSummay_total">500.00</td>
+            <td id="cartSummary_total">0.00</td>
           </tfoot>
         </table>
       </div>
@@ -41,7 +41,7 @@
   </nav>
   <main>
     <section id="productList">
-      <div class="productCard">
+      <!-- <div class="productCard">
         <img class="productThumbnail" src="https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/1.png" alt="">
         <div class="productBottomSheet">
           <div class="productInfoContainer">
@@ -88,9 +88,12 @@
             <strong class="productName">iPhone</strong>
             <div class="productPrice">$200</div>
           </div>
-          <button class="addToCard">+</button>
+           <div class="productBotton">
+            <button class="addToCard">+</button>
+            <button class="removeToCard">+</button>
+          </div>
         </div>
-      </div>
+      </div> -->
     </section>
   </main>
   <script src="./index.js"></script>

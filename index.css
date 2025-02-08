@@ -12,6 +12,7 @@ html,body{
 
 nav{
   position: sticky;
+  top: 0;
   padding: 8px 24px;
   background-color: rgb(214,214,214);
   display: flex;
@@ -19,9 +20,9 @@ nav{
   justify-content: space-between;
 }
 
-#cardSummary{
+#cartSummary{
   position: absolute;
-  top: 40px;
+  top: 80px;
   right: 20px;
   background-color: white;
   padding: 16px;
@@ -38,10 +39,6 @@ nav{
   }
 }
 
-.productCard{
-  
-}
-
 .productThumbnail{
   height: 200px;
   object-fit: cover;
@@ -54,21 +51,9 @@ nav{
   justify-content: space-between;
 }
 
-.productInfoContainer{
-
-}
-
 .productName{
   display: block;
   margin-top: 1em;
-}
-
-.productPrice{
-
-}
-
-.addToCard{
-
 }
 
 #productList{
@@ -87,4 +72,15 @@ button{
   border-radius: 5px;
   padding: 0.5em 2em;
   font-size: 20px;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.productButton{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 10px;
 }
